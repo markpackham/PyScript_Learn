@@ -12,4 +12,5 @@ output_el.innerHTML = f"{arr}"
 def shuffle_array(*args):
 
     shuffled = sorted(arr, key=lambda k: random.random())
-    pyscript.write('output',shuffled)
+    # pyscript.write('output',shuffled)
+    output_el.innerHTML = shuffled
