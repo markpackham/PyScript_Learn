@@ -9,15 +9,17 @@
     <title>Learn PyScript</title>
 </head>
 <body>
-    <div id="output" class="text-3xl">
+    <div id="output" class="m-5 text-3xl">
 
     </div>
     <py-script>
-    def getSum(x, y):
-        return x + y
-    
-    sum = getSum(2,3)
-    pyscript.write('output',sum)
+    import math
+
+    pyscript.write('output', math.sqrt(16))
     </py-script>
+
+    <!-- py-repl lets us output a python interpreter to run code in
+    <py-repl>
+    </py-repl> -->
 </body>
 </html>
