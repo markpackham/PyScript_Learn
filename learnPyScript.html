@@ -9,14 +9,15 @@
     <title>Learn PyScript</title>
 </head>
 <body>
+    <div id="output" class="text-3xl">
+
+    </div>
     <py-script>
     def getSum(x, y):
         return x + y
     
     sum = getSum(2,3)
-    print(sum)
-
-    console.log(sum)
+    pyscript.write('output',sum)
     </py-script>
 </body>
 </html>
