@@ -7,15 +7,19 @@
     <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
     <title>Learn PyScript</title>
+    <py-env>
+        - numpy
+    </py-env>
 </head>
 <body>
     <div id="output" class="m-5 text-3xl">
 
     </div>
     <py-script>
-    import math
+    import numpy as np
 
-    pyscript.write('output', math.sqrt(16))
+    arr = np.array([1, 2, 3, 4, 5])
+    pyscript.write('output', arr)
     </py-script>
 
     <!-- py-repl lets us output a python interpreter to run code in
